@@ -1,0 +1,60 @@
+.header {
+	display: flex;
+	background-color: aqua;
+	justify-content: space-between;
+	padding: 1em 3em;
+	align-items: center;
+	height: 12vh;
+}
+/********nav-btn***************************/
+.nav-btn {
+	font-size: 3em;
+	cursor: pointer;
+	transition: transform 0.5s ease;
+
+	&:hover {
+		color: white;
+		transform: rotate(180deg);
+	}
+}
+
+/***********nav-item******************************/
+.nav-items {
+	display: flex;
+	height: auto !important;
+	text-transform: capitalize;
+}
+.nav-item {
+	margin: 0 0.6em;
+}
+/************nav-social**********************************/
+.nav-social {
+	display: flex;
+	margin: 0 2em 0 0;
+}
+.nav-social-item {
+	margin: 0.4em;
+}
+.nav-right {
+	display: flex;
+	align-items: center;
+}
+
+/*************pic************************************/
+.pic {
+	font-size: 3em;
+}
+/**************screen size********************************/
+@media screen and (max-width: 800px) {
+	.nav-items {
+		flex-direction: column;
+		display: block;
+		line-height: 5em;
+	}
+	.nav-social {
+		display: none;
+	}
+	.header {
+		align-items: baseline;
+	}
+}
